@@ -1,0 +1,12 @@
+header {
+  &.masthead {
+    text-align: center;
+    color: white;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    height: 450px;
+  }
+}

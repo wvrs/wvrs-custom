@@ -1,0 +1,22 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #1c1f52,
+  light: #e4e6ff
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+/** Navbar **/
+$navbar-dark-color: theme-color("light");
+$navbar-dark-hover-color: colors("white");
+$navbar-dark-active-color: theme-color("light");
+
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 1rem;
+
+$navbar-nav-link-padding-x: 1rem;
+$navbar-nav-link-padding-y: 1rem;
