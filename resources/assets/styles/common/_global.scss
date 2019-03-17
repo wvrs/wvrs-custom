@@ -1,3 +1,45 @@
 body {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: "Merriweather", Georgia, serif;
+  color: theme-color("primary");
+  display: inline-block;
+
+  // &::after {
+  //   background-color: $gray-200;
+  //   content: "";
+  //   display: block;
+  //   height: 1rem;
+  //   width: 100%;
+  //   position: relative;
+  //   top: -1.1rem;
+  //   right: -5px;
+  //   z-index: -1;
+  // }
+
+  .home & {
+    text-transform: uppercase;
+  }
+}
+
+.home h1 {
+  font-size: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
+
+  // &::after {
+  //   height: 2rem;
+  //   top: -2rem;
+  // }
+}

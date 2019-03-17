@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top static-top">
+<nav class="navbar navbar-expand-lg navbar-dark static-top">
   <div class="container">
     <a class="navbar-brand" href="{{ home_url('/') }}"><img src="@asset('images/logo.png')" alt="{{ get_bloginfo('name', 'display') }}" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

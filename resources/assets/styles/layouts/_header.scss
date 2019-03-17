@@ -1,3 +1,19 @@
+.navbar {
+  background-color: theme-color("primary");
+  font-size: $font-size-sm;
+}
+
+.home .navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+
 .navbar-brand img {
   width: 264px;
+}
+
+.wrap {
+  margin-top: 3rem;
 }
