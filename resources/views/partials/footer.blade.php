@@ -1,5 +1,10 @@
-<footer class="content-info">
+<footer>
   <div class="container">
-    @php dynamic_sidebar('sidebar-footer') @endphp
+    <div class="row">
+      <div class="col-md address">2400 Arcola Ave, Wheaton, Maryland 20902
+      </div>
+      <div class="col-md text-md-right">&copy; 2019 Copyright Wheaton Volunteer Rescue Squad
+      </div>
+    </div>
   </div>
 </footer>

@@ -1,3 +1,16 @@
+.home h1 {
+  font-size: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
+
+  // &::after {
+  //   height: 2rem;
+  //   top: -2rem;
+  // }
+}
+
 .has-2-columns.title-left {
   .wp-block-column:first-child {
     flex-basis: 100%;

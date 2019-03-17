@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
@@ -31,15 +36,7 @@ h4,
   }
 }
 
-.home h1 {
-  font-size: 3rem;
-
-  @include media-breakpoint-up(lg) {
-    font-size: 4rem;
-  }
-
-  // &::after {
-  //   height: 2rem;
-  //   top: -2rem;
-  // }
+.wrap {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
 }
