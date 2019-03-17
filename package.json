@@ -8,12 +8,7 @@
     "type": "git",
     "url": "git://github.com/wvrs/wvrs-custom.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
+  "licenses": "CC-BY-NC-4.0",
   "browserslist": [
     "last 2 versions",
     "android 4",
