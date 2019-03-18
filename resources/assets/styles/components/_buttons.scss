@@ -1,4 +1,15 @@
 .btn {
   text-transform: uppercase;
   letter-spacing: 1px;
+  border-width: 2px;
+
+  &:hover {
+    color: theme-color("primary");
+    background-color: transparent;
+  }
+}
+
+a.btn {
+  font-weight: 600;
+  text-decoration: initial;
 }

@@ -1,15 +1,29 @@
 .navbar {
-  background-color: theme-color("primary");
+  background: linear-gradient(90deg, theme-color("primary") 0%, #31368a 100%);
   font-size: $font-size-sm;
+}
+
+a.navbar-brand {
+  background: none;
 }
 
 .home .navbar {
   position: absolute;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background: transparent;
 }
 
 .navbar-brand img {
   width: 264px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: initial;
+  text-decoration: initial;
+}
+
+a.dropdown-item {
+  text-decoration: none;
+  font-size: 0.875rem;
 }

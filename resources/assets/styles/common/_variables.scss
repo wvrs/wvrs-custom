@@ -10,7 +10,25 @@ $theme-colors: (
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
 
-/** Navbar **/
+/** Containers */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px
+);
+
+/** Text */
+$line-height-base: 1.75;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.15;
+$h5-font-size: $font-size-base;
+
+/** Navbar */
 $navbar-dark-color: theme-color("light");
 $navbar-dark-hover-color: colors("white");
 $navbar-dark-active-color: theme-color("light");

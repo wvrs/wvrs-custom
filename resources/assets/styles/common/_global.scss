@@ -18,6 +18,8 @@ h4,
   font-family: "Merriweather", Georgia, serif;
   color: theme-color("primary");
   display: inline-block;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
 
   // &::after {
   //   background-color: $gray-200;
@@ -33,10 +35,28 @@ h4,
 
   .home & {
     text-transform: uppercase;
+    margin-top: 0;
   }
 }
 
 .wrap {
   margin-top: 3rem;
   margin-bottom: 10rem;
+}
+
+a {
+  color: theme-color("primary");
+  text-decoration: underline;
+  font-weight: 600;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background: theme-color("primary");
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.content li {
+  margin-bottom: 0.75rem;
 }
