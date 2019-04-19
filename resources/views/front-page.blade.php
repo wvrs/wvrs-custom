@@ -43,7 +43,8 @@
    },
    "sameAs": [
    "https://www.facebook.com/WheatonRescue2/",
-   "https://twitter.com/wheatonrescue2"
+   "https://twitter.com/wheatonrescue2",
+   "https://www.instagram.com/wheatonrescue2"
    ]}
   </script>
 @endsection

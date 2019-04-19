@@ -7,4 +7,23 @@ footer {
   padding: 1rem;
   font-size: 0.875rem;
   color: $gray-700;
+
+  ul.social {
+    list-style: none;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 0.5rem;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 }
