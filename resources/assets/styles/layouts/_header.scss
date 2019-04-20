@@ -15,7 +15,11 @@ a.navbar-brand {
 }
 
 .navbar-brand img {
-  width: 264px;
+  width: 190px;
+
+  @include media-breakpoint-up(sm) {
+    width: 264px;
+  }
 }
 
 .navbar-nav .nav-link {
