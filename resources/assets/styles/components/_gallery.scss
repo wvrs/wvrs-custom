@@ -1,0 +1,27 @@
+.wp-block-gallery .blocks-gallery-image,
+.wp-block-gallery .blocks-gallery-item {
+  figure {
+    flex-direction: column;
+  }
+
+  figcaption {
+    background: none;
+    height: initial;
+    flex-grow: 0;
+    position: relative;
+    color: $body-color;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+.wp-block-gallery.is-cropped {
+  .blocks-gallery-image,
+  .blocks-gallery-item {
+    a,
+    img {
+      height: 240px;
+      flex: 0;
+    }
+  }
+}
