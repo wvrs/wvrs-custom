@@ -1,5 +1,34 @@
 @extends('layouts.app')
 
+@section('other_head')
+  <meta name="description" content="The Wheaton Volunteer Rescue Squad provides ambulance, paramedic, and fire and rescue service to Wheaton and the surrounding community.">
+  <meta name="image" content="@asset('images/og_square.jpg')">
+
+  <meta itemprop="name" content="Wheaton Volunteer Rescue Squad">
+  <meta itemprop="description" content="The Wheaton Volunteer Rescue Squad provides ambulance, paramedic, and fire and rescue service to Wheaton and the surrounding community.">
+  <meta itemprop="image" content="@asset('images/og_square.jpg')">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Wheaton Volunteer Rescue Squad">
+  <meta name="twitter:description" content="The Wheaton Volunteer Rescue Squad provides ambulance, paramedic, and fire and rescue service to Wheaton and the surrounding community.">
+  <meta name="twitter:site" content="wheatonrescue2">
+  <meta name="twitter:image:src" content="@asset('images/og_square.jpg')">
+
+  <meta property="og:title" content="Wheaton Volunteer Rescue Squad">
+  <meta property="og:description" content="Providing volunteer ambulance, paramedic, and fire / rescue services.">
+  <meta property="og:image" content="@asset('images/og_rect.jpg')">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Wheaton Rescue Squad in front of station" />
+  <meta property="og:image" content="@asset('images/og_square.jpg')">
+  <meta property="og:image:width" content="980" />
+  <meta property="og:image:height" content="980" />
+  <meta property="og:image:alt" content="Wheaton Rescue Squad in front of station" />
+  <meta property="og:url" content="{!! site_url() !!}">
+  <meta property="og:site_name" content="Wheaton Volunteer Rescue Squad">
+  <meta property="og:type" content="website">
+@endsection
+
 @section('subheader')
   <header class="masthead"></header>
 @endsection
