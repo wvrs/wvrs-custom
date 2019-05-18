@@ -7,11 +7,13 @@ a.navbar-brand {
   background: none;
 }
 
-.home .navbar {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: transparent;
+@include media-breakpoint-up(sm) {
+  .home .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: transparent;
+  }
 }
 
 .navbar-brand img {

@@ -3,6 +3,7 @@
 
 $theme-colors: (
   primary: #1c1f52,
+  secondary: #e17619,
   light: #e4e6ff
 );
 
@@ -19,6 +20,8 @@ $container-max-widths: (
 );
 
 /** Text */
+$enable-responsive-font-sizes: true;
+
 $line-height-base: 1.75;
 
 $font-size-base: 1rem;
@@ -42,5 +45,6 @@ $navbar-nav-link-padding-y: 1rem;
 /** Buttons */
 $btn-border-radius: 0;
 $input-btn-padding-x: 2rem;
+$input-btn-padding-y: 0.575rem;
 $input-btn-font-size: 0.875rem;
 $btn-font-weight: 600;

@@ -1,0 +1,10 @@
+span.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: contain;
+
+  &.icon-lock {
+    background-image: url(../images/lock.svg);
+  }
+}

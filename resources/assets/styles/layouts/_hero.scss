@@ -1,13 +1,19 @@
 header {
-  &.masthead {
-    text-align: center;
-    color: white;
-    background-image: url(../images/hero.jpg);
-    background-color: #040827;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: top;
-    background-size: cover;
-    height: 450px;
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: block;
+
+    &.masthead {
+      text-align: center;
+      color: white;
+      background-image: url(../images/hero.jpg);
+      background-color: #040827;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: top;
+      background-size: cover;
+      height: 450px;
+    }
   }
 }

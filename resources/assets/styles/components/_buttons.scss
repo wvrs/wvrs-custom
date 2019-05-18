@@ -4,8 +4,21 @@
   border-width: 2px;
 
   &:hover {
-    color: theme-color("primary");
     background-color: transparent;
+
+    &.btn-primary {
+      color: theme-color("primary");
+    }
+
+    &.btn-secondary {
+      border-color: theme-color("secondary");
+      color: theme-color("secondary");
+    }
+  }
+
+  span.icon {
+    vertical-align: sub;
+    margin-right: 0.5rem;
   }
 }
 
