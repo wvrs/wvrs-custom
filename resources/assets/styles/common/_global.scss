@@ -58,6 +58,12 @@ a {
     color: white;
     text-decoration: none;
   }
+
+  &.no-hover {
+    &:hover {
+      background: transparent;
+    }
+  }
 }
 
 .content li {

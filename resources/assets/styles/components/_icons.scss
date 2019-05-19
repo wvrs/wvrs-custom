@@ -8,3 +8,14 @@ span.icon {
     background-image: url(../images/lock.svg);
   }
 }
+
+.trust-badge {
+  img {
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0%);
+      transition: 0.3s;
+    }
+  }
+}
