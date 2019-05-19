@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark static-top">
+<nav class="navbar navbar-expand-lg navbar-light static-top">
   <div class="container">
-    <a class="navbar-brand" href="{{ home_url('/') }}"><img src="@asset('images/logo.png')" alt="{{ get_bloginfo('name', 'display') }}" /></a>
+    <a class="navbar-brand" href="{{ home_url('/') }}"><img src="@asset('images/logo_dk.png')" alt="{{ get_bloginfo('name', 'display') }}" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

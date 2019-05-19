@@ -5,15 +5,43 @@ header {
     display: block;
 
     &.masthead {
-      text-align: center;
-      color: white;
-      background-image: url(../images/hero.jpg);
-      background-color: #040827;
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-position: top;
-      background-size: cover;
       height: 450px;
+      display: flex;
+
+      .block {
+        flex: 1;
+
+        .block-content {
+          align-self: center;
+          padding: 5rem;
+        }
+
+        &:nth-of-type(1) {
+          background: #1e3c72;
+          background: linear-gradient(to top, darken(theme-color("primary"), 8), theme-color("primary"));
+          color: white;
+          display: flex;
+
+          h1 {
+            color: white;
+          }
+
+          .btn {
+            margin-top: 1rem;
+          }
+        }
+
+        &:nth-of-type(2) {
+          text-align: center;
+          color: white;
+          background: url(../images/hero.jpg);
+          background-color: theme-color("primary");
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-position: top;
+          background-size: cover;
+        }
+      }
     }
   }
 }

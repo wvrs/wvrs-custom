@@ -30,7 +30,16 @@
 @endsection
 
 @section('subheader')
-  <header class="masthead"></header>
+  <header class="masthead">
+    <div class="block">
+      <div class="block-content">
+        <h1>Give back to your community</h1>
+        <p>Your donation helps pay for critical needs such as volunteer training, equipment, fire station upgrades, and new vehicles.</p>
+        <a class="btn btn-secondary" href="/donate" role="button">Donate Now</a>
+      </div>
+    </div>
+    <div class="block"></div>
+  </header>
 @endsection
 
 @section('content')

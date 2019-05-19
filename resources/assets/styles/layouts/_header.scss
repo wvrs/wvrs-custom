@@ -1,19 +1,9 @@
 .navbar {
-  background: linear-gradient(90deg, theme-color("primary") 0%, #31368a 100%);
   font-size: $font-size-sm;
 }
 
 a.navbar-brand {
   background: none;
-}
-
-@include media-breakpoint-up(sm) {
-  .home .navbar {
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: transparent;
-  }
 }
 
 .navbar-brand img {
