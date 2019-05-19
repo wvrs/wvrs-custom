@@ -7,6 +7,7 @@
     <div class="wrap container" role="document">
       <div class="content">
         <main class="main">
+          @php if (function_exists('wvrs_breadcrumbs')) wvrs_breadcrumbs() @endphp
           @yield('content')
         </main>
         @if (App\display_sidebar())

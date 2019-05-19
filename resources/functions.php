@@ -93,3 +93,43 @@ Container::getInstance()
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+// Breadcrumb function
+function wvrs_breadcrumbs() {
+
+  $delimiter = '&raquo;';
+  $currentBefore = '<span class="current">';
+  $currentAfter = '</span>';
+
+  if ( !is_home() && !is_front_page() || is_paged() ) {
+
+    echo '<div class="crumbs">';
+
+    global $post;
+
+    if ( is_page() && $post->post_parent ) {
+      $parent_id  = $post->post_parent;
+      $breadcrumbs = array();
+      while ($parent_id) {
+        $page = get_page($parent_id);
+        $breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
+        $parent_id  = $page->post_parent;
+      }
+      $breadcrumbs = array_reverse($breadcrumbs);
+      foreach ($breadcrumbs as $crumb) echo $crumb . ' ' . $delimiter . ' ';
+      echo $currentBefore;
+      the_title();
+      echo $currentAfter;
+
+    }
+
+    if ( get_query_var('paged') ) {
+      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
+      echo __('Page') . ' ' . get_query_var('paged');
+      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
+    }
+
+    echo '</div>';
+
+  }
+}
