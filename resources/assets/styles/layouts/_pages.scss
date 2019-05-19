@@ -16,4 +16,17 @@
 
 .wp-block-image {
   margin-bottom: 0;
+
+  .alignright {
+    margin-left: 3rem;
+  }
+
+  .alignleft {
+    margin-right: 3rem;
+  }
+
+  .alignleft,
+  .alignright {
+    margin-bottom: 3rem;
+  }
 }
