@@ -4,7 +4,6 @@
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     @include('partials.header')
-    @yield('subheader')
     <div class="wrap container" role="document">
       <div class="content">
         <main class="main">

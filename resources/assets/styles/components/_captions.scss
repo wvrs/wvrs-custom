@@ -1,0 +1,9 @@
+.caption {
+  align-self: flex-end;
+
+  p {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-light;
+    margin-bottom: 0;
+  }
+}

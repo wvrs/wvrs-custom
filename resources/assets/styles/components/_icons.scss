@@ -9,9 +9,23 @@ span.icon {
   }
 }
 
+.trust-container figure {
+  width: 60%;
+  float: right;
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  figcaption {
+    margin-top: 2rem;
+  }
+}
+
 .trust-badge {
   img {
-    filter: grayscale(100%);
+    filter: grayscale(50%);
+    width: auto;
+    height: 75px;
+    min-width: initial;
 
     &:hover {
       filter: grayscale(0%);

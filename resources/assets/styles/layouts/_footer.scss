@@ -1,12 +1,19 @@
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-height: 60px;
-  background-color: $gray-200;
-  padding: 1rem;
-  font-size: 0.875rem;
-  color: $gray-700;
+  margin-top: 6rem;
+  font-size: $font-size-sm;
+
+  .contact {
+    align-self: flex-end;
+    padding-bottom: 2.5rem;
+
+    .contact-box {
+      max-width: 200px;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 
   ul.social {
     list-style: none;

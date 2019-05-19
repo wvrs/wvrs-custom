@@ -1,0 +1,26 @@
+.info {
+  background: theme-color("primary");
+  color: white;
+
+  &.info-small {
+    padding: 1.5rem;
+    margin-top: 2rem;
+
+    .info-heading {
+      @extend .h4;
+
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &.info-large {
+    padding: 2.5rem;
+
+    .info-heading {
+      @extend .h3;
+
+      margin-top: 0;
+    }
+  }
+}

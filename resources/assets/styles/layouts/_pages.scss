@@ -1,19 +1,19 @@
+.page-header {
+  display: none;
+}
+
+.wp-block-columns {
+  margin-bottom: 4rem;
+}
+
+.wp-block-group {
+  margin-bottom: 6rem;
+
+  &.narrow-group {
+    max-width: 520px;
+  }
+}
+
 .wp-block-image {
-  min-width: 100%;
   margin-bottom: 0;
-
-  img {
-    min-width: 100%;
-    height: auto;
-  }
-
-  .alignleft {
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .alignright {
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-  }
 }
