@@ -98,29 +98,30 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 function wvrs_breadcrumbs() {
 
   $delimiter = '&raquo;';
-  $currentBefore = '<span class="current">';
-  $currentAfter = '</span>';
 
   if ( !is_home() && !is_front_page() || is_paged() ) {
 
-    echo '<div class="crumbs">';
+    echo '<ol class="crumbs" itemscope itemtype="https://schema.org/BreadcrumbList">';
 
     global $post;
 
     if ( is_page() && $post->post_parent ) {
       $parent_id  = $post->post_parent;
       $breadcrumbs = array();
+      $parent_count = count(get_post_ancestors( $post ));
+      $crumbs_count = $parent_count + 1;
       while ($parent_id) {
         $page = get_page($parent_id);
-        $breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
+        $breadcrumbs[] = '<li itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><a itemtype="https://schema.org/Thing"
+       itemprop="item" href="' . get_permalink($page->ID) . '"><span itemprop="name">' . get_the_title($page->ID) . '</span></a><meta itemprop="position" content="' . $parent_count . '" /></li>';
         $parent_id  = $page->post_parent;
+        $parent_count--;
       }
       $breadcrumbs = array_reverse($breadcrumbs);
       foreach ($breadcrumbs as $crumb) echo $crumb . ' ' . $delimiter . ' ';
-      echo $currentBefore;
-      the_title();
-      echo $currentAfter;
-
+      echo '<li itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem"><span itemprop="name">' . get_the_title() . '</span><meta itemprop="position" content="' . $crumbs_count . '" /></li>';
     }
 
     if ( get_query_var('paged') ) {
@@ -129,7 +130,7 @@ function wvrs_breadcrumbs() {
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
     }
 
-    echo '</div>';
+    echo '</ol>';
 
   }
 }
