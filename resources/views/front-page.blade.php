@@ -47,10 +47,11 @@
 
   <script type="application/ld+json">
    { "@context": "http://schema.org",
-   "@type": "Organization",
+   "@type": "FireStation",
+   "legalName": "Wheaton Volunteer Rescue Squad, Inc.",
    "name": "Wheaton Volunteer Rescue Squad",
-   "legalName" : "Wheaton Volunteer Rescue Squad, Inc.",
-   "url": "http://www.wvrs.org",
+   "url": "https://www.wvrs.org",
+   "description": "Volunteer organization providing ambulance, paramedic, and fire and rescue service to Wheaton and the surrounding community"
    "logo": "https://wvrs.org/wp-content/themes/wvrs-custom/dist/images/icon_bd19bfa7.png",
    "foundingDate": "1955",
    "address": {
@@ -59,8 +60,10 @@
    "addressLocality": "Wheaton",
    "addressRegion": "MD",
    "postalCode": "20902",
-   "addressCountry": "USA"
+   "addressCountry": "US"
    },
+   "openingHours": "Mo-Su",
+   "naics": "922160",
    "contactPoint": {
    "@type": "ContactPoint",
    "contactType": "customer service",
