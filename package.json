@@ -71,6 +71,7 @@
     "baguettebox.js": "^1.11.0",
     "bootstrap": "v4.3.1",
     "jquery": "^3.4.0",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "wowjs": "^1.1.3"
   }
 }
