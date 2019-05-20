@@ -63,7 +63,7 @@
    },
    "contactPoint": {
    "@type": "ContactPoint",
-   "contactType": "Administrative",
+   "contactType": "customer service",
    "telephone": "[+301-949-9673]"
    },
    "sameAs": [
