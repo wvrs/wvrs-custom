@@ -8,9 +8,9 @@
           <p>Questions?<br />Call us at <a href="tel:301-949-9673">301-949-9673</a>.</p>
         </div>
         <ul class="social">
-          <li><a href="https://www.facebook.com/WheatonRescue2/" target="_blank" title="View Facebook Page"><img src="@asset('images/social_facebook.svg')"></a></li>
-          <li><a href="https://twitter.com/wheatonrescue2" target="_blank" title="View Twitter Page"><img src="@asset('images/social_twitter.svg')"></a></li>
-          <li><a href="https://www.instagram.com/wheatonrescue2" target="_blank" title="View Instagram Page"><img src="@asset('images/social_instagram.svg')"></a></li>
+          <li><a href="https://www.facebook.com/WheatonRescue2/" target="_blank" rel="noreferrer noopener" title="View Facebook Page"><img src="@asset('images/social_facebook.svg')"></a></li>
+          <li><a href="https://twitter.com/wheatonrescue2" target="_blank" rel="noreferrer noopener" title="View Twitter Page"><img src="@asset('images/social_twitter.svg')"></a></li>
+          <li><a href="https://www.instagram.com/wheatonrescue2" target="_blank" rel="noreferrer noopener" title="View Instagram Page"><img src="@asset('images/social_instagram.svg')"></a></li>
         </ul>
       </div>
       <div class="col-md info info-large">
