@@ -2,6 +2,15 @@ footer {
   margin-top: 6rem;
   font-size: $font-size-sm;
 
+  .info-large {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    p {
+      font-size: $font-size-base;
+    }
+  }
+
   .contact {
     align-self: flex-end;
     padding-bottom: 2.5rem;
@@ -32,10 +41,5 @@ footer {
         height: 30px;
       }
     }
-  }
-
-  .info-large {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
   }
 }
