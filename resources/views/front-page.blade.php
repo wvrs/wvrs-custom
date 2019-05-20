@@ -64,7 +64,7 @@
    "contactPoint": {
    "@type": "ContactPoint",
    "contactType": "customer service",
-   "telephone": "[+301-949-9673]"
+   "telephone": "+1-301-949-9673"
    },
    "sameAs": [
    "https://www.facebook.com/WheatonRescue2/",
