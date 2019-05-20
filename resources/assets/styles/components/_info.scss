@@ -1,5 +1,6 @@
 .info {
   background: theme-color("primary");
+  border-radius: $border-radius;
   color: white;
 
   &.info-small {
