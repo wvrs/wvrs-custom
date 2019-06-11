@@ -1,6 +1,9 @@
 .navbar {
   font-size: $font-size-sm;
-  margin-bottom: 2rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 2rem;
+  }
 }
 
 .navbar-brand img {
