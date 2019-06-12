@@ -16,7 +16,9 @@ footer {
     padding-bottom: 2.5rem;
 
     .contact-box {
-      max-width: 200px;
+      @include media-breakpoint-up(md) {
+        max-width: 200px;
+      }
 
       p {
         margin-bottom: 1rem;
