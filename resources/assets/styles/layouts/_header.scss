@@ -2,7 +2,7 @@
   font-size: $font-size-sm;
 
   @include media-breakpoint-up(sm) {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -20,4 +20,8 @@
 
 a.dropdown-item {
   font-size: 0.875rem;
+}
+
+.nav-link {
+  font-weight: 500;
 }

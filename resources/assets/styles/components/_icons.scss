@@ -9,14 +9,28 @@ span.icon {
   }
 }
 
-.trust-container figure {
-  width: 60%;
-  float: right;
-  text-align: center;
-  margin-bottom: 2.5rem;
+.trust-container {
+  width: 47%;
+  display: inline-block;
 
-  figcaption {
-    margin-top: 1rem;
+  @include media-breakpoint-up(sm) {
+    width: 100%;
+    display: block;
+  }
+
+  figure {
+    width: 60%;
+    float: none;
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    @include media-breakpoint-up(sm) {
+      float: right;
+    }
+
+    figcaption {
+      margin-top: 1rem;
+    }
   }
 }
 

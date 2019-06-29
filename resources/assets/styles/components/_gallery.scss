@@ -42,6 +42,7 @@
       a,
       img {
         height: 150px;
+        max-width: 150px;
 
         @include media-breakpoint-up(sm) {
           height: 100px;

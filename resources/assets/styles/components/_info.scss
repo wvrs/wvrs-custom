@@ -6,6 +6,13 @@
   &.info-small {
     padding: 1.5rem;
     margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      width: inherit;
+      text-align: left;
+    }
 
     .info-heading {
       @extend .h4;

@@ -4,6 +4,10 @@
 
 .wp-block-columns {
   margin-bottom: 4rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 8rem;
+  }
 }
 
 .wp-block-group {
