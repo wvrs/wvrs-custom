@@ -21,13 +21,18 @@
     @include('partials.footer')
     @php wp_footer() @endphp
     <script>
-    !function(w,h,e,a,t,o,n){w.GoogleAnalyticsObject=e;w[e]||(w[e]=function(){
-    (w[e].q=w[e].q||[]).push(arguments)});w[e].l=+new Date;o=h.createElement(a);
-    n=h.getElementsByTagName(a)[0];o.src=t;n.parentNode.insertBefore(o,n)}
-    (window,document,'ga','script','//www.google-analytics.com/analytics.js');
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 
-    ga('create', 'UA-450742-1', 'www.wvrs.org');
+    ga('create', 'UA-450742-1', 'auto');
+
+    ga('require', 'outboundLinkTracker');
+    ga('require', 'socialWidgetTracker');
+    ga('require', 'pageVisibilityTracker');
+    ga('require', 'maxScrollTracker');
+
     ga('send', 'pageview');
     </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js'></script>
   </body>
 </html>
