@@ -166,3 +166,13 @@ function disable_emojis_tinymce( $plugins ) {
         return array();
     }
 }
+
+/**
+ * Add google event tags to all images
+ */
+function add_image_ga_class($content) {
+    global $post;
+    $content = preg_replace('/<a(.*?)><img(.*?)class=\"wp-image-(.*?)\"(.*?)><\/a>/i', '<a$1 onClick="ga(\'send\', \'event\', \'Image\', \'Expand\', \'img-$3\');"><img$2class="wp-image-$3"$4></a>', $content);
+    return $content;
+ }
+ add_filter('the_content','add_image_ga_class');
