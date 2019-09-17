@@ -1,4 +1,4 @@
-<footer class="wow fadeInUp">
+<footer>
   <div class="container">
     <div class="row">
       <div class="col-md contact">
