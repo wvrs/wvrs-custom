@@ -1,15 +1,20 @@
 .top-banner {
-  background: theme-color("primary");
+  // background: theme-color("primary");
   padding: 2px 0;
-  font-size: 0.8rem;
+  // font-size: 0.8rem;
   text-align: center;
-  color: theme-color("light");
+  // color: theme-color("light");
 
   a {
-    color: theme-color("light");
+    // color: theme-color("light");
+    width: 100%;
+    display: block;
+    border: 2px solid theme-color("primary");
+    margin-top: 4px;
 
     &:hover {
-      color: theme-color("light");
+      color: darken(theme-color("primary"), 10%);
+      transition: 0.2s;
     }
   }
 }
