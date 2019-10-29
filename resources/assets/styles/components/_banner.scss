@@ -1,20 +1,26 @@
 .top-banner {
-  // background: theme-color("primary");
+  background: theme-color("primary");
   padding: 2px 0;
-  // font-size: 0.8rem;
+  font-size: 0.8rem;
   text-align: center;
-  // color: theme-color("light");
+  color: theme-color("light");
 
   a {
-    // color: theme-color("light");
+    color: theme-color("light");
     width: 100%;
     display: block;
-    border: 2px solid theme-color("primary");
-    margin-top: 4px;
+  }
 
-    &:hover {
-      color: darken(theme-color("primary"), 10%);
-      transition: 0.2s;
+  &.box-red {
+    background: none;
+    font-size: 1rem;
+    color: #e74c3c;
+
+    a {
+      color: #e74c3c;
+      width: 100%;
+      border: 2px solid #e74c3c;
+      margin-top: 4px;
     }
   }
 }
