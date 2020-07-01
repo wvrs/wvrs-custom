@@ -51,7 +51,7 @@
    "legalName": "Wheaton Volunteer Rescue Squad, Inc.",
    "name": "Wheaton Volunteer Rescue Squad",
    "url": "https://www.wvrs.org",
-   "description": "Volunteer organization providing ambulance, paramedic, and fire and rescue service to Wheaton and the surrounding community"
+   "description": "Volunteer organization providing ambulance, paramedic, and fire and rescue service to Wheaton and the surrounding community",
    "logo": "https://wvrs.org/wp-content/themes/wvrs-custom/dist/images/icon_bd19bfa7.png",
    "foundingDate": "1955",
    "address": {
@@ -69,6 +69,8 @@
    "contactType": "customer service",
    "telephone": "+1-301-949-9673"
    },
+   "telephone": "+1-301-949-9673",
+   "image": "https://wvrs.org/wp-content/uploads/2019/03/14409624_1098485443532304_879993686145431461_o-e1552862469115.jpg",
    "sameAs": [
    "https://www.facebook.com/WheatonRescue2/",
    "https://twitter.com/wheatonrescue2",
