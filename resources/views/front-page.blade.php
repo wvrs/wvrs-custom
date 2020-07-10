@@ -62,6 +62,7 @@
    "postalCode": "20902",
    "addressCountry": "US"
    },
+   "nonprofitStatus" : "Nonprofit501c3",
    "openingHours": "Mo-Su",
    "naics": "922160",
    "contactPoint": {
