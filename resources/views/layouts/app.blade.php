@@ -32,6 +32,8 @@
     ga('require', 'maxScrollTracker');
 
     ga('send', 'pageview');
+
+    gtag('config', 'AW-935685321');
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <script async src='https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js'></script>
