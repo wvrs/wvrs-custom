@@ -1,7 +1,3 @@
-.page-header {
-  display: none;
-}
-
 .wp-block-columns {
   margin-bottom: 4rem;
 
@@ -37,4 +33,14 @@
 
 .ride-along footer .info {
   display: none;
+}
+
+.page-header {
+  display: none;
+}
+
+.home {
+  .page-header {
+    display: none;
+  }
 }

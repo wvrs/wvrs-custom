@@ -7,3 +7,14 @@
     display: inline-block;
   }
 }
+
+.volunteer-fire-ems-benefits,
+.positions,
+.duty-shifts,
+.cadet-program,
+.ride-along,
+.requirements {
+  .crumbs {
+    display: none;
+  }
+}
