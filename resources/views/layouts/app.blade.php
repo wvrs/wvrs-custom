@@ -21,21 +21,13 @@
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVDJCSCQ42"></script>
     <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-450742-1', 'auto');
-
-    ga('require', 'outboundLinkTracker');
-    ga('require', 'socialWidgetTracker');
-    ga('require', 'pageVisibilityTracker');
-    ga('require', 'maxScrollTracker');
-
-    ga('send', 'pageview');
-
-    gtag('config', 'AW-935685321');
+      gtag('config', 'G-VVDJCSCQ42');
     </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <script async src='https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js'></script>
   </body>
 </html>

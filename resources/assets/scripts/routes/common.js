@@ -7,7 +7,7 @@ export default {
     // JavaScript to be fired on all pages
 
     // Click to enlarge
-    baguetteBox.run('.wp-block-gallery');
+    // baguetteBox.run(".wp-block-gallery");
     baguetteBox.run('.wp-block-image');
 
     // Run wow.js

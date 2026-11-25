@@ -1,7 +1,7 @@
 .top-banner {
   // background: theme-color("primary");
   padding: 2px 0;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   // text-align: center;
   // color: theme-color("light");
 
@@ -17,9 +17,47 @@
     }
   }
 
+  &.box-black {
+    background: black;
+    font-size: 0.9rem;
+    color: white;
+    padding: 0.5rem;
+
+    a {
+      color: white;
+      width: 100%;
+      // border: 2px solid #e74c3c;
+      margin-top: 4px;
+
+      &:hover {
+        color: darken(white, 10%);
+        // border-color: darken(#e74c3c, 10%);
+      }
+    }
+  }
+
+  &.box-blue {
+    background: theme-color("primary");
+    font-size: 0.9rem;
+    color: white;
+    padding: 0.5rem;
+
+    a {
+      color: white;
+      width: 100%;
+      // border: 2px solid #e74c3c;
+      margin-top: 4px;
+
+      &:hover {
+        color: darken(white, 10%);
+        // border-color: darken(#e74c3c, 10%);
+      }
+    }
+  }
+
   &.box-red {
     background: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #e74c3c;
     padding: 0.5rem;
 

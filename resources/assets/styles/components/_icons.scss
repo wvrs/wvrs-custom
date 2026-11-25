@@ -13,23 +13,19 @@ span.icon {
   width: 47%;
   display: inline-block;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     width: 100%;
     display: block;
   }
 
   figure {
-    width: 60%;
     float: none;
     text-align: center;
-    margin-bottom: 2.5rem;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       float: right;
-    }
-
-    figcaption {
-      margin-top: 1rem;
+      width: 60%;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -37,8 +33,8 @@ span.icon {
 .trust-badge {
   img {
     filter: grayscale(50%);
-    width: auto;
-    height: 75px;
+    width: 75%;
+    height: auto;
     min-width: initial;
 
     &:hover {

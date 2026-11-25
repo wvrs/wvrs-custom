@@ -2,8 +2,8 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #3498db,
-  light: #fff
+  primary: #1e75c7,
+  light: #fff,
 );
 
 $body-color: #333;
@@ -15,7 +15,7 @@ $container-max-widths: (
   sm: 480px,
   md: 782px,
   lg: 782px,
-  xl: 782px
+  xl: 782px,
 );
 
 $line-height-base: 1.75;
@@ -40,4 +40,3 @@ $input-btn-padding-x: 2rem;
 $input-btn-padding-y: 0.575rem;
 
 $btn-font-weight: 700;
-
