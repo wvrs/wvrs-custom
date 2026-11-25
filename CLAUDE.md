@@ -27,6 +27,15 @@ Before touching the server: back it up (`sudo tar czf ~/wvrs-custom-theme-<date>
 change the minimum number of files, then verify with `curl -sL https://www.wvrs.org/` and check for HTTP 200.
 Do not `git pull`/`reset --hard`/rsync --delete over the live tree without diffing first.
 
+## Server maintenance notes
+
+- Apache hardening lives in `/etc/apache2/conf-available/wvrs-hardening.conf` (denies `.git`, `.env*`, readme/license,
+  composer/package files). Config backup: `~/apache2-backup-20261124` on the VM.
+- Nov 2026: full `apt upgrade` + reboot (Ubuntu 24.04, kernel 7.0.0-1020-azure; 6.14 left as GRUB fallback).
+- Azure Backup (vault `defaultVault744`) takes a recovery point of the VM roughly every 4 hours: the rollback path.
+- Azure *write* operations (snapshots etc.) require an MFA login; reads work with a plain `az login`.
+- `ssh` is socket-activated (`ssh.socket`); `systemctl is-enabled ssh` showing "disabled" is normal.
+
 ## Seasonal banner
 
 `resources/views/partials/banner.blade.php` is date-gated with `strtotime('YYYY-MM-DD 00:00:00 America/New_York')`.
