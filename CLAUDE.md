@@ -36,6 +36,14 @@ Do not `git pull`/`reset --hard`/rsync --delete over the live tree without diffi
 - Azure *write* operations (snapshots etc.) require an MFA login; reads work with a plain `az login`.
 - `ssh` is socket-activated (`ssh.socket`); `systemctl is-enabled ssh` showing "disabled" is normal.
 
+## Other VMs (same resource group)
+
+- `wvrs-portal` (portal.wvrs.org): nginx + Node app under pm2 (`portal-app`, started at boot by `pm2-<user>.service` via
+  `pm2 resurrect`; run `pm2 save` after changing processes). Admin user differs from main2: see `az vm show`.
+  Nov 2026: upgraded, rebooted, ufw (22/80/443) + fail2ban enabled. **Not covered by Azure Backup** (as of Nov 2026).
+- `wvrs-elearning2026` (Moodle, Debian 13): auto-updates on; no ufw/fail2ban yet. `wvrs-elearning2023` is deallocated.
+- All NSGs allow SSH from anywhere (kept open on purpose for now).
+
 ## Seasonal banner
 
 `resources/views/partials/banner.blade.php` is date-gated with `strtotime('YYYY-MM-DD 00:00:00 America/New_York')`.
