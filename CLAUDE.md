@@ -36,4 +36,5 @@ Each year: Christmas trees banner "Sales Begin <day after Thanksgiving>" until t
 ## Known loose ends
 
 - Server `.git` was at a 2019 commit with many uncommitted edits (recovered into git in Nov 2026).
-- `members.wvrs.org/public` has `.env.bak-*` files in a web root: should be removed/moved.
+- `members.wvrs.org/public` has `.env.bak-*` files; the owner has chosen to leave them (that vhost redirects to the portal, so they are not served). Don't touch them.
+- Server git status shows `D CLAUDE.md` on purpose: it is not deployed because the theme dir is web-accessible.
